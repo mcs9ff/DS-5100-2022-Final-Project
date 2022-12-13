@@ -138,6 +138,7 @@ class Die:
     Return values: self.die_one (a dataframe with current sets of faces and wieghts)
 
 class Game:
+    
     '''
     Creates a game that consists of rolling of one or more dice of the same kind one or more times.
 
@@ -196,6 +197,7 @@ class Game:
     Return values: self.game_one
     
 class Analyzer:
+    
     '''
     An analyzer that takes the results of a single game and computes various descriptive statistical properties about it.
     '''
