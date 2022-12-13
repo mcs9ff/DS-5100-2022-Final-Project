@@ -15,11 +15,16 @@ pip install -e
 Use the following code:
 
 import numpy as np
+
 import pandas as pd
 
+
 from montecarlo import Die
+
 from montecarlo import Game
+
 from montecarlo import Analyzer
+
 
 **Create dice objects**:
 
@@ -35,15 +40,22 @@ newdie.show_current_fw()
 **Play game**:
 
 newgame = Game([newdie, newdie, newdie])
+
 newgame.play(20)
-newgame.recent_results('W')
+
+newgame.recent_results('Wide')
+
 
 **Analyse game**:
 
-newanalyzer = Analyzer(game1)
+newanalyzer = Analyzer(newgame)
+
 newanalyzer.jackpot()
+
 newanalyzer.combo()
+
 newanalyzer.face_counts_per_roll()
+
 
 **Descriptions**:
 
