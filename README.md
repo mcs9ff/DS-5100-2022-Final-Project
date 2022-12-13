@@ -24,9 +24,13 @@ from montecarlo import Analyzer
 **Create dice objects**:
 
 newdie = Die(np.array([1,2,3,4]))
+
 newdie.change_weight(1, 5.)
+
 newdie.roll_die(5)
+
 newdie.show_current_fw()
+
 
 **Play game**:
 
